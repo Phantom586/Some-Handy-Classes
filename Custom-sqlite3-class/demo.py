@@ -31,10 +31,13 @@ def update():
 
 def remove():
     db.remove_from_db('account_details', account_no=123457, pin=3456)
-    # db.remove_from_db('account_details', account_no=234556, pin=5667)
+    db.remove_from_db('account_details', account_no=234556, pin=5667)
+
 
 createdb()
-# createtable()
-# insertValue()
+
+# For Testing Purpose try commenting out some functions to check out working of individual functions
+createtable()
+insertValue()
 remove()
 query()
